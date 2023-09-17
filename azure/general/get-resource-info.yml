@@ -1,9 +1,9 @@
 ---
-- name: Get Azure Resources 
+- name: Get Azure Active Directory service principal info
   hosts: localhost
   connection: local
   tasks:
-    - name: Get facts for one resource group
+    - name: Get Azure Active Directory service principal info
       azure.azcollection.azure_rm_adserviceprincipal_info:
         app_id: "{{ app_id }}"
         tenant: "{{ tenant_id }}"
