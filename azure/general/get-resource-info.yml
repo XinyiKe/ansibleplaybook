@@ -4,4 +4,6 @@
   connection: local
   tasks:
     - name: Get facts for one resource group
-      azure.azcollection.azure_rm_resourcegroup_info:
+      azure.azcollection.azure_rm_adserviceprincipal_info:
+        app_id: "{{ app_id }}"
+        tenant: "{{ tenant_id }}"
